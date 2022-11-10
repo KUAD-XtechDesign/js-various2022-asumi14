@@ -3,110 +3,228 @@
     padding: 0;
 }
 
-header{
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 100%;
-}
+/* PC版 */
+@media screen and (min-width:480px){
 
-.logo{
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0 0 50px;
-}
-
-.space{
-    height: 150px;
-    width: 100%;
-}
-
-img{
-    width: 150px;
-}
-
-.contents{
-    background-color: #dfcb1e;
-    display: block;
-    height: 500px;
-    margin: 0 50px;
-    padding: 50px;
-}
-
-.fa-square-twitter{
-    color: #1da1f2;
-    font-size: 50px;
-    margin:  50px 50px 0 0;
-}
-
-.box{
-    background-color: #ffffff;
-    width: 800px;
-    height: 500px;
-
-}
-
-.box img{
-    width: 400px;
-    margin: 40px 200px;
-}
-
-.box p{
-    text-align: center;
-}
-
-
-.isu img{
-    width: 200px;
-    margin: 150px 0;
-}
-
-.contents{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-/* Loading背景画面設定　*/
-#splash {
-    /*fixedで全面に固定*/
-      position: fixed;
-      width: 100%;
-      height: 100%;
-      z-index: 999;
-      background:#eee;
-      text-align:center;
-      color:#fff;
+    header{
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
     }
-    
-    /* Loading画像中央配置　*/
-    #splash_logo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0 0 50px;
     }
-    
-    /* Loading アイコンの大きさ設定　*/
-    #splash_logo img {
-      width:260px;
+
+    .space{
+        height: 150px;
+        width: 100%;
     }
-    
-    /* fadeUpをするアイコンの動き */
-    .fadeUp{
-    animation-name: fadeUpAnime;
-    animation-duration:0.5s;
-    animation-fill-mode:forwards;
-    opacity: 0;
+
+    img{
+        width: 150px;
     }
-    
-    @keyframes fadeUpAnime{
-      from {
+
+    .contents{
+        background-color: #dfcb1e;
+        display: block;
+        height: 500px;
+        margin: 0 50px;
+        padding: 50px;
+    }
+
+    .fa-square-twitter{
+        color: #1da1f2;
+        font-size: 50px;
+        margin:  50px 50px 0 0;
+    }
+
+    .box{
+        background-color: #ffffff;
+        width: 800px;
+        height: 500px;
+
+    }
+
+    .box img{
+        width: 400px;
+        margin: 40px 200px;
+    }
+
+    .box p{
+        text-align: center;
+    }
+
+
+    .isu img{
+        width: 200px;
+        margin: 150px 0;
+    }
+
+    .contents{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /* Loading背景画面設定　*/
+    #splash {
+        /*fixedで全面に固定*/
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background:#eee;
+        text-align:center;
+        color:#fff;
+        }
+        
+        /* Loading画像中央配置　*/
+        #splash_logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+        
+        /* Loading アイコンの大きさ設定　*/
+        #splash_logo img {
+        width:260px;
+        }
+        
+        /* fadeUpをするアイコンの動き */
+        .fadeUp{
+        animation-name: fadeUpAnime;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
         opacity: 0;
-      transform: translateY(100px);
-      }
-    
-      to {
-        opacity: 1;
-      transform: translateY(0);
-      }
+        }
+        
+        @keyframes fadeUpAnime{
+        from {
+            opacity: 0;
+        transform: translateY(100px);
+        }
+        
+        to {
+            opacity: 1;
+        transform: translateY(0);
+        }
+        }
+}
+
+
+/* SP版 */
+@media screen and (max-width:480px){
+
+    header{
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
     }
+
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0 0 50px;
+    }
+
+    .space{
+        height: 150px;
+        width: 100%;
+    }
+
+    img{
+        width: 150px;
+    }
+
+    .contents{
+        background-color: #dfcb1e;
+        display: block;
+        height: 500px;
+        margin: 0 20px;
+        padding: 40px;
+    }
+
+    .fa-square-twitter{
+        color: #1da1f2;
+        font-size: 50px;
+        margin:  50px 50px 0 0;
+    }
+
+    .box{
+        background-color: #ffffff;
+        width: 800px;
+        height: 500px;
+    }
+
+    .box img{
+        width: 200px;
+        margin: 20px 100px;
+    }
+
+    .box p{
+        text-align: center;
+        font-size: 12px;
+    }
+
+
+    .isu img{
+        width: 100px;
+        margin: 150px 0;
+    }
+
+    .contents{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    /* Loading背景画面設定　*/
+    #splash {
+        /*fixedで全面に固定*/
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+        background:#eee;
+        text-align:center;
+        color:#fff;
+        }
+        
+        /* Loading画像中央配置　*/
+        #splash_logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        }
+        
+        /* Loading アイコンの大きさ設定　*/
+        #splash_logo img {
+        width:260px;
+        }
+        
+        /* fadeUpをするアイコンの動き */
+        .fadeUp{
+        animation-name: fadeUpAnime;
+        animation-duration:0.5s;
+        animation-fill-mode:forwards;
+        opacity: 0;
+        }
+        
+        @keyframes fadeUpAnime{
+        from {
+            opacity: 0;
+        transform: translateY(100px);
+        }
+        
+        to {
+            opacity: 1;
+        transform: translateY(0);
+        }
+        }
+}
+
