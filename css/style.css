@@ -30,8 +30,7 @@
     .contents{
         background-color: #dfcb1e;
         display: block;
-        height: 500px;
-        margin: 0 50px;
+        height: auto;
         padding: 50px;
     }
 
@@ -43,24 +42,43 @@
 
     .box{
         background-color: #ffffff;
-        width: 800px;
-        height: 500px;
+        width: 100%;
+        height: auto;
+        padding: 60px 10px;
 
     }
 
     .box img{
-        width: 400px;
-        margin: 40px 200px;
+        width: 40%;
+        margin: 30px 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .box p{
         text-align: center;
+        font-size: 18px;
     }
 
 
-    .isu img{
-        width: 200px;
-        margin: 150px 0;
+    .button{
+        align-self: center;
+        padding-left: 90px;
+        width: 20%;
+        margin: 50px 60px;
+    }
+
+    .button li{
+        background-color: #eee;
+        margin: 30px;
+        padding: 50px 30px;
+        list-style: none;
+        text-align: center;
+    }
+
+    .button li a{
+        text-decoration: none;
     }
 
     .contents{
@@ -143,9 +161,13 @@
     .contents{
         background-color: #dfcb1e;
         display: block;
-        height: 500px;
+        height: auto;
         margin: 0 20px;
         padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        width: 80vw;
     }
 
     .fa-square-twitter{
@@ -156,12 +178,12 @@
 
     .box{
         background-color: #ffffff;
-        width: 800px;
+        width: 65%;
         height: 500px;
     }
 
     .box img{
-        width: 200px;
+        width: 50%;
         margin: 20px 100px;
     }
 
@@ -173,14 +195,8 @@
 
     .isu img{
         width: 100px;
-        margin: 150px 0;
+        margin: 50px 0;
     }
-
-    .contents{
-        display: flex;
-        justify-content: space-between;
-    }
-
 
     /* Loading背景画面設定　*/
     #splash {
